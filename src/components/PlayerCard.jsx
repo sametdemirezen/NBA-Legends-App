@@ -1,17 +1,27 @@
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Image from 'react-bootstrap/Image';
-const PlayerCard = ({name, img, statistics}) => {
-    console.log(name);
+
+import Card from 'react-bootstrap/Card';
+import { useState } from 'react';
+const PlayerCard = ({name, img, statistics }) => {
+    //console.log(name);
+    
+    const [isVisible, setIsVisible] = useState(true);
   return (
-    <Container>
-      <Row>
-        <Col>
-        <Image src = {img}></Image>
-        </Col>
-      </Row>
-    </Container>
+    <Card style={{height : "300px"}} onClick={ () => (setIsVisible(!isVisible))
+      
+    } >
+    {isVisible ? (
+    <Card.Img variant="top" src={img} style={{height: "250px"}}/>
+  ) : (
+<Card.Body>
+  <p>{statistics[0]}</p>
+  <p>{statistics[1]}</p>
+  <p>{statistics[2]}</p>
+  <p>{statistics[3]}</p>
+  
+</Card.Body>
+) }
+<Card.Title>{name}</Card.Title>
+</Card>
   )
 }
 
