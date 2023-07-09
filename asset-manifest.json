@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/NBA-Legends-App/static/css/main.ceebaf25.css",
+    "main.js": "/NBA-Legends-App/static/js/main.a5df505c.js",
+    "index.html": "/NBA-Legends-App/index.html",
+    "main.ceebaf25.css.map": "/NBA-Legends-App/static/css/main.ceebaf25.css.map",
+    "main.a5df505c.js.map": "/NBA-Legends-App/static/js/main.a5df505c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ceebaf25.css",
+    "static/js/main.a5df505c.js"
+  ]
+}
