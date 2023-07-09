@@ -1,14 +1,14 @@
 import logo from "../assets/nba-logo.png"
 import Image from 'react-bootstrap/Image';
-import Container from 'react-bootstrap/Container';
 const Header = () => {
   return (
-    
-<Container style={{ maxWidth: '500px', marginBottom : "20px" }}>
-<Image src={logo} alt="nba" style={{ marginLeft: '160px', height: '75px', width: '150px', marginTop: '15px' }}fluid/>
-        <h1 className="text-center text-warning">NBA Legends</h1>
-</Container>
-
+  <div >
+    <div className="d-flex justify-content-center align-items-center mb-3 p-3" >
+<Image className="" src={logo} alt="nba" style={{ height: '75px', width: '150px',}}/>
+        
+</div>
+    <h1 className="text-center text-success">NBA Legends</h1>
+  </div>
   )
 }
 

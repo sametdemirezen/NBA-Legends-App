@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.icons{
+    color: chocolate;
+    margin-right: 5px;
+}
+
+.container {
+    background-image: url(https://p4.wallpaperbetter.com/wallpaper/661/973/110/cool-nba-logo-wallpaper-preview.jpg);
+    background-repeat:repeat;
+    
+  }
+
+  .names{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    margin: auto;
+}
+
+.cols{
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.cols:hover{
+    transform: scale(0.9);
+}
+
+.row-container {
+    min-height: 100px;
+}
