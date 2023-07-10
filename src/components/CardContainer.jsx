@@ -30,7 +30,7 @@ const CardContainer = () => {
       <Row className="g-3 p-3 container">
       { isEmpty ? <h4 className="text-warning">There is no results!!!</h4>
        : filteredData.map((item, i) => (
-        <Col className="cols" key={i} xs={6} lg={3} md={4}>
+        <Col className="cols" key={i} xs={12} sm= {6} lg={3} md={4}>
           <PlayerCard name={item.name} img={item.img} statistics={item.statistics} />
         </Col>)
       )}
