@@ -11,7 +11,7 @@ const CardContainer = () => {
     const [isEmpty, setIsEmpty] = useState(false);
     const getPlayers = (event) => {
       setSearchTerm(event.target.value);
-      if (filteredData.length == 0){
+      if (filteredData.length === 0){
         setIsEmpty(true);
       }
     };
